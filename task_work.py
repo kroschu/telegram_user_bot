@@ -8,9 +8,16 @@ bot = Client(name=config('LOGIN'),
 
 bot.start()
 
+# Відправка повідомлення собі
 bot.send_message(chat_id='me', text='Отправка сообщения себе')
-bot.send_message(chat_id='user_login', text='Отправка сообщения по логину другому пользователю')
-bot.send_message(chat_id="+70000000", text='Отправка сообщения по номеру телефона')
-bot.send_message(chat_id=122334566, text='Отправка сообщения по телеграмм айди')
+
+# Відправка повідомлення за логіном
+bot.send_message(chat_id='kroschu', text='Отправка сообщения по логину другому пользователю')
+
+# Відправка повідомлення за Telegram ID
+bot.send_message(chat_id=6412868393, text='Отправка сообщения по телеграмм айди')
+
+# Відправка повідомлення в групу
+bot.send_message(chat_id='-1002392775957', text='Отправка сообщения в приватную группу')
 
 bot.stop()
